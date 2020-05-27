@@ -7,4 +7,9 @@ program
   .description('init project')
   .action(require('../lib/init'))
 
+program
+  .command('refresh')
+  .description('refresh routers & menu')
+  .action(require('../lib/refresh'))
+
 program.parse(process.argv)
